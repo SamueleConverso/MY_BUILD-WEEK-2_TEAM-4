@@ -1,0 +1,1490 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Build Week 2 - Team 4</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/circular-font.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="d-flex page1">
+      <header class="col-lg-3 d-none d-lg-block">
+        <nav class="navbar navbar-dark bg-dark position-sticky top-0">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarToggleExternalContent"
+              aria-controls="navbarToggleExternalContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </nav>
+        <div
+          class="collapse"
+          id="navbarToggleExternalContent"
+          data-bs-theme="dark"
+        >
+          <div>
+            <ul class="menuList text-white p-3 m-0">
+              <li>
+                <i class="bi bi-house-door-fill"></i
+                ><a href="#" class="text-white text-decoration-none">Home</a>
+              </li>
+              <li>
+                <!-- <i class="bi bi-search"></i>
+                <a href="#" class="text-white text-decoration-none">Cerca</a> -->
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionFlushExample"
+                >
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed p-0"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                      >
+                        <i class="bi bi-search"></i>Cerca artista
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseOne"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body row justify-content-center">
+                        <input
+                          id="inputSearch"
+                          type="text"
+                          placeholder="Cerca..."
+                          class="col-8 searchButton"
+                        />
+                        <p
+                          class="btn bg-secondary col-4 mb-0 p-1"
+                          id="btnSearch"
+                        >
+                          CERCA!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="#yourLibrary" class="text-decoration-none text-white"
+                  ><i class="bi bi-music-note-list"></i>La tua libreria</a
+                >
+              </li>
+              <br />
+              <li><i class="bi bi-plus-lg bg-secondary"></i>Crea Playlist</li>
+              <li>
+                <a
+                  id="linkToPlaylistPage2"
+                  href="playlist.html"
+                  class="text-decoration-none text-white"
+                  ><i class="bi bi-heart-fill"></i>Brani che ti piacciono</a
+                >
+              </li>
+              <li><i class="bi bi-bookmark-fill"></i>I tuoi episodi</li>
+            </ul>
+          </div>
+        </div>
+        <div class="overflow-auto text-secondary" id="yourLibrary">
+          <div class="d-flex justify-content-between align-items-baseline mx-1 my-3">
+            <i class="bi bi-arrow-down"></i>
+            <p class="align-self-center fs-6 fst-italic">Recents</p>
+            <i class="hedIcon bi bi-list-task"></i>
+          </div>
+          <hr />
+          <div class="d-flex text-secondary">
+            <div class="align-self-center">
+              <img
+                class="m-2"
+                src="assets/imgs/search/image-2.jpg"
+                height="50"
+              />
+            </div>
+            <div class="w-100">
+              <div class="m-2">
+                <p class="h6">DJ SELECT!</p>
+                <p>
+                  <span><i class="bi bi-music-note-beamed me-1"></i></span
+                  >PLAYLIST • User
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex text-secondary">
+            <div class="align-self-center">
+              <img
+                class="m-2"
+                src="assets/imgs/search/image-3.jpg"
+                height="50"
+              />
+            </div>
+            <div class="w-100">
+              <div class="m-2">
+                <p class="h6">INDIE Mix</p>
+                <p>
+                  <span><i class="bi bi-music-note-beamed me-1"></i></span
+                  >PLAYLIST • User
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex text-secondary">
+            <div class="align-self-center">
+              <img
+                class="m-2"
+                src="assets/imgs/search/image-4.jpg"
+                height="50"
+              />
+            </div>
+            <div class="w-100">
+              <div class="m-2">
+                <p class="h6">Mint</p>
+                <p>
+                  <span><i class="bi bi-music-note-beamed me-1"></i></span
+                  >PLAYLIST • User
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex text-secondary">
+            <div class="align-self-center">
+              <img
+                class="m-2 rounded-5 w-100"
+                src="assets/imgs/artists/achilleLauro.jpg"
+                height="50"
+                width="50"
+              />
+            </div>
+            <div class="w-100">
+              <div class="m-2 mx-4">
+                <p class="h6">Achille Lauro</p>
+                <p>
+                  <span><i class="bi bi-music-note-beamed me-1"></i></span
+                  >ARTIST
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex text-secondary">
+            <div class="align-self-center">
+              <img
+                class="m-2 rounded-5"
+                src="assets/imgs/artists/eminem.jpg"
+                height="50"
+                width="50"
+              />
+            </div>
+            <div class="w-100">
+              <div class="m-2">
+                <p class="h6">EMINEM</p>
+                <p>
+                  <span><i class="bi bi-music-note-beamed me-1"></i></span
+                  >ARTIST
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex text-secondary">
+            <div class="align-self-center">
+              <img
+                class="m-2 rounded-5"
+                src="assets/imgs/artists/ladyGaga.jpg"
+                height="50"
+                width="50"
+              />
+            </div>
+            <div class="w-100">
+              <div class="m-2">
+                <p class="h6">Lady Gaga</p>
+                <p>
+                  <span><i class="bi bi-music-note-beamed me-1"></i></span
+                  >ARTIST
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex text-secondary">
+            <div class="align-self-center">
+              <img
+                class="m-2"
+                src="assets/imgs/search/image-5.jpg"
+                height="50"
+              />
+            </div>
+            <div class="w-100">
+              <div class="m-2">
+                <p class="h6">VIVA LATINO!</p>
+                <p>
+                  <span><i class="bi bi-music-note-beamed me-1"></i></span
+                  >PLAYLIST • User
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex text-secondary">
+            <div class="align-self-center">
+              <img
+                class="m-2 rounded-5"
+                src="assets/imgs/artists/lanaDelRey.jpg"
+                height="50"
+                width="50"
+              />
+            </div>
+            <div class="w-100">
+              <div class="m-2">
+                <p class="h6">Lana Del Rey</p>
+                <p>
+                  <span><i class="bi bi-music-note-beamed me-1"></i></span
+                  >ARTIST
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex text-secondary">
+            <div class="align-self-center">
+              <img
+                class="m-2 rounded-5"
+                src="assets/imgs/artists/lazza.jpg"
+                height="50"
+                width="50"
+              />
+            </div>
+            <div class="w-100">
+              <div class="m-2">
+                <p class="h6">LAZZA</p>
+                <p>
+                  <span><i class="bi bi-music-note-beamed me-1"></i></span
+                  >ARTIST
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex text-secondary">
+            <div class="align-self-center">
+              <img
+                class="m-2"
+                src="assets/imgs/search/image-6.jpg"
+                height="50"
+              />
+            </div>
+            <div class="w-100">
+              <div class="m-2">
+                <p class="h6">RNB & Be</p>
+                <p>
+                  <span><i class="bi bi-music-note-beamed me-1"></i></span
+                  >PLAYLIST • User
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex text-secondary">
+            <div class="align-self-center">
+              <img
+                class="m-2"
+                src="assets/imgs/search/image-7.jpg"
+                height="50"
+              />
+            </div>
+            <div class="w-100">
+              <div class="m-2">
+                <p class="h6">Rock This</p>
+                <p>
+                  <span><i class="bi bi-music-note-beamed me-1"></i></span
+                  >PlAYLIST • User
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex text-secondary">
+            <div class="align-self-center">
+              <img
+                class="m-2"
+                src="assets/imgs/search/image-8.jpg"
+                height="50"
+              />
+            </div>
+            <div class="w-100">
+              <div class="m-2">
+                <p class="h6">Reset Mode</p>
+                <p>
+                  <span><i class="bi bi-music-note-beamed me-1"></i></span
+                  >PLAYLIST • User
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex text-secondary">
+            <div class="align-self-center">
+              <img
+                class="m-2"
+                src="assets/imgs/search/image-9.jpg"
+                height="50"
+              />
+            </div>
+            <div class="w-100">
+              <div class="m-2">
+                <p class="h6">Written By: Nija</p>
+                <p>
+                  <span><i class="bi bi-music-note-beamed me-1"></i></span
+                  >PLAYLIST • User
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex text-secondary">
+            <div class="align-self-center">
+              <img
+                class="m-2 rounded-5"
+                src="assets/imgs/artists/theWeeknd.jpg"
+                height="50"
+                width="50"
+              />
+            </div>
+            <div class="w-100">
+              <div class="m-2">
+                <p class="h6">TheWeeknd</p>
+                <p>
+                  <span><i class="bi bi-music-note-beamed me-1"></i></span
+                  >ARTIST
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex text-secondary">
+            <div class="align-self-center">
+              <img
+                class="m-2 rounded-5"
+                src="assets/imgs/artists/queen.jpg"
+                height="50"
+                width="50"
+              />
+            </div>
+            <div class="w-100">
+              <div class="m-2">
+                <p class="h6">Queen</p>
+                <p>
+                  <span><i class="bi bi-music-note-beamed me-1"></i></span
+                  >ARTIST
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex text-secondary">
+            <div class="align-self-center">
+              <img
+                class="m-2"
+                src="assets/imgs/search/image-10.jpg"
+                height="50"
+              />
+            </div>
+            <div class="w-100">
+              <div class="m-2">
+                <p class="h6">Lo-Fi Beats</p>
+                <p>
+                  <span><i class="bi bi-music-note-beamed me-1"></i></span
+                  >PLAYLIST • User
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex text-secondary">
+            <div class="align-self-center">
+              <img
+                class="m-2"
+                src="assets/imgs/search/image-11.jpg"
+                height="50"
+              />
+            </div>
+            <div class="w-100">
+              <div class="m-2">
+                <p class="h6">Song To Sing in The car</p>
+                <p>
+                  <span><i class="bi bi-music-note-beamed me-1"></i></span
+                  >PLAYLIST • User
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex text-secondary">
+            <div class="align-self-center">
+              <img
+                class="m-2"
+                src="assets/imgs/search/image-12.jpg"
+                height="50"
+              />
+            </div>
+            <div class="w-100">
+              <div class="m-2">
+                <p class="h6">All Out 10s</p>
+                <p>
+                  <span><i class="bi bi-music-note-beamed me-1"></i></span
+                  >PLAYLIST • User
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex text-secondary">
+            <div class="align-self-center">
+              <img
+                class="m-2 rounded-5"
+                src="assets/imgs/artists/rihanna.jpg"
+                height="50"
+                width="50"
+              />
+            </div>
+            <div class="w-100">
+              <div class="m-2">
+                <p class="h6">Rihanna</p>
+                <p>
+                  <span><i class="bi bi-music-note-beamed me-1"></i></span
+                  >ARTIST
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex text-secondary">
+            <div class="align-self-center">
+              <img
+                class="m-2 rounded-5"
+                src="assets/imgs/artists/salmo.jpg"
+                height="50"
+                width="50"
+              />
+            </div>
+            <div class="w-100">
+              <div class="m-2">
+                <p class="h6">SALMO</p>
+                <p>
+                  <span><i class="bi bi-music-note-beamed me-1"></i></span
+                  >ARTIST
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex text-secondary">
+            <div class="align-self-center">
+              <img
+                class="m-2 rounded-5"
+                src="assets/imgs/artists/tizianoFerro.jpg"
+                height="50"
+                width="50"
+              />
+            </div>
+            <div class="w-100">
+              <div class="m-2">
+                <p class="h6">Tiziano Ferro</p>
+                <p>
+                  <span><i class="bi bi-music-note-beamed me-1"></i></span
+                  >ARTIST
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex text-secondary">
+            <div class="align-self-center">
+              <img
+                class="m-2"
+                src="assets/imgs/search/image-13.jpeg"
+                height="50"
+              />
+            </div>
+            <div class="w-100">
+              <div class="m-2">
+                <p class="h6">Your Summer Rewind</p>
+                <p>
+                  <span><i class="bi bi-music-note-beamed me-1"></i></span
+                  >PLAYLIST • User
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex text-secondary">
+            <div class="align-self-center">
+              <img
+                class="m-2"
+                src="assets/imgs/search/image-14.jpg"
+                height="50"
+              />
+            </div>
+            <div class="w-100">
+              <div class="m-2">
+                <p class="h6">Top Songs Global</p>
+                <p>
+                  <span><i class="bi bi-music-note-beamed me-1"></i></span
+                  >PLAYLIST • User
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- <ul class="listMusic list-type-none p-4">
+            <li>"Weightless" - Marconi Union</li>
+            <li>"Coffee" - Sylvan Esso</li>
+            <li>"Peach" - Broods</li>
+            <li>"Breezeblocks" - alt-J</li>
+            <li>"Sunflower" - Post Malone, Swae Lee</li>
+            <li>"Pink + White" - Frank Ocean</li>
+            <li>"Riverside" - Agnes Obel</li>
+            <li>"The Daily" (New York Times)</li>
+            <li>"The Tim Ferriss Show"</li>
+            <li>"Sleepy Time Mumbles"</li>
+            <li>"TED Talks Daily"</li>
+            <li>"The Art of Charm"</li>
+            <li>"Stuff You Should Know"</li>
+            <li>"Philosophize This!"</li>
+            <li>"Night Owl" - Galimatias</li>
+            <li>"Toxic" - Britney Spears (Jazz Version)</li>
+            <li>"Electric Feel" - MGMT</li>
+            <li>"Pink Moon" - Nick Drake</li>
+            <li>"Space Song" - Beach House</li>
+            <li>"Go!" - The Chemical Brothers feat. Q-Tip</li>
+            <li>"Take Me Out" - Franz Ferdinand</li>
+            <li>"The Happiness Lab" (con Dr. Laurie Santos)</li>
+            <li>"Radiolab"</li>
+            <li>"The Moth"</li>
+            <li>"Criminal"</li>
+            <li>"My Favorite Murder"</li>
+            <li>"How I Built This" (con Guy Raz)</li>
+            <li>"The Infinite Monkey Cage"</li>
+            <li>"Pink Moon" - Nick Drake</li>
+            <li>"Space Song" - Beach House</li>
+            <li>"Go!" - The Chemical Brothers feat. Q-Tip</li>
+            <li>"Take Me Out" - Franz Ferdinand</li>
+            <li>"The Happiness Lab" (con Dr. Laurie Santos)</li>
+            <li>"Radiolab"</li>
+            <li>"The Moth"</li>
+            <li>"Criminal"</li>
+            <li>"My Favorite Murder"</li>
+            <li>"How I Built This" (con Guy Raz)</li>
+            <li>"The Infinite Monkey Cage"</li>
+            <li>"Radiolab"</li>
+            <li>"The Moth"</li>
+            <li>"Criminal"</li>
+            <li>"My Favorite Murder"</li>
+            <li>"How I Built This" (con Guy Raz)</li>
+            <li>"The Infinite Monkey Cage"</li>
+            <li>"Pink Moon" - Nick Drake</li>
+            <li>"Space Song" - Beach House</li>
+            <li>"Go!" - The Chemical Brothers feat. Q-Tip</li>
+            <li>"Take Me Out" - Franz Ferdinand</li>
+            <li>"The Happiness Lab" (con Dr. Laurie Santos)</li>
+            <li>"Radiolab"</li>
+            <li>"The Moth"</li>
+            <li>"Criminal"</li>
+            <li>"My Favorite Murder"</li>
+            <li>"How I Built This" (con Guy Raz)</li>
+            <li>"The Infinite Monkey Cage"</li>
+          </ul> -->
+        </div>
+      </header>
+
+      <main class="col-12 col-lg-7 bg-dark">
+        <div class="overflow-auto">
+          <div class="container-fluid bg-gradient">
+            <div class="d-flex justify-content-between mb-3 pt-3">
+              <div class="d-flex gap-2 iconsBeforeAfter">
+                <i
+                  id="goPreviousAlbum"
+                  class="bi bi-arrow-left-circle align-self-center text-white btn bg-transparent border-0 p-0"
+                ></i>
+                <i
+                  id="goNextAlbum"
+                  class="bi bi-arrow-right-circle align-self-center text-white btn bg-transparent border-0 p-0"
+                ></i>
+              </div>
+              <div>
+                <p class="mb-0 p-2 text-white bg-black rounded-3 userSelect">
+                  <i
+                    class="bi bi-person-circle px-1 align-middle text-white"
+                  ></i
+                  >Utente
+                  <i class="bi bi-caret-down-fill align-middle text-white"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="d-none d-lg-block w-100" id="albumSection">
+              <div class="w-100 d-flex gap-2 albumBg p-3 overflow-hidden">
+                <div class="align-self-center">
+                  <img id="imgAlbum" class="imgAlbumIndex" src="" />
+                </div>
+                <div class="w-100 d-flex flex-column">
+                  <div
+                    class="w-75 d-flex justify-content-start align-items-center my-2"
+                  >
+                    <p class="navMain opacity-75 p-2 mx-2">ALBUM</p>
+                    <p
+                      class="navMain opacity-75 p-2 text-truncate align-self-end"
+                    >
+                      NASCONDI ANNUNCI
+                    </p>
+                  </div>
+                  <div
+                    class="d-flex flex-column h-100 justify-content-between mx-2"
+                  >
+                    <h1 id="albumTitle"></h1>
+
+                    <a
+                      id="artistName"
+                      class="text-decoration-none text-success"
+                      style="width: fit-content"
+                    ></a>
+                    <p>Questo album è perfetto per te!</p>
+                    <div
+                      class="d-flex align-items-center justify-content-start w-100"
+                    >
+                      <p
+                        class="btn text-black mb-0 btnPlay m-1"
+                        id="btnToAlbum"
+                      >
+                        Play
+                      </p>
+                      <p
+                        id="addFavouriteAlbum"
+                        class="btn btn-dark border border-white btnSalva m-1"
+                      >
+                        Salva
+                      </p>
+                      <p
+                        id="removeFavouriteAlbum"
+                        class="btn btn-outline-success border border-black m-1 btnSalva"
+                        style="display: none"
+                      >
+                        Rimuovi
+                      </p>
+                      <p class="btn border border-0 fw-bolder m-1">
+                        <i class="bi bi-three-dots"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Section BUONASERA-->
+          <section>
+            <div class="d-flex justify-content-between">
+              <div>
+                <h2 class="text-white m-3">Buonasera</h2>
+              </div>
+              <div
+                class="text-white d-flex justify-content-center align-items-center d-lg-none"
+              >
+                <div><i class="bi bi-bell m-3 icBuonanotte"></i></div>
+                <div><i class="bi bi-clock-history m-3 icBuonanotte"></i></div>
+                <div><i class="bi bi-gear m-3 icBuonanotte"></i></div>
+              </div>
+            </div>
+            <div>
+              <p class="text-white d-lg-none">
+                <span class="m-5">Musica</span><span>Podcast e show</span>
+              </p>
+            </div>
+            <div class="containe-fluid m-2 d-flex">
+              <div class="buonaseraCards row justify-content-center">
+                <div class="col-6 col-md-4">
+                  <div class="card mb-3 border-0" style="max-width: 540px">
+                    <div class="row g-0">
+                      <div class="col-5">
+                        <img
+                          src="assets/imgs/main/image-2.jpg"
+                          class="img-fluid h-100 rounded-start"
+                          alt="imageOne"
+                        />
+                      </div>
+                      <div class="col-7 align-self-center">
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            POV: la tua estate è un film!
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-4">
+                  <div class="card mb-3 border-0" style="max-width: 540px">
+                    <div class="row g-0">
+                      <div class="col-5">
+                        <img
+                          src="assets/imgs/main/image-3.jpg"
+                          class="img-fluid h-100 rounded-start"
+                          alt="imageOne"
+                        />
+                      </div>
+                      <div class="col-7 align-self-center">
+                        <div class="card-body">
+                          <h5 class="card-title">Massima Concentrazione</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-4">
+                  <div class="card mb-3 border-0" style="max-width: 540px">
+                    <div class="row g-0">
+                      <div class="col-5">
+                        <img
+                          src="assets/imgs/main/image-4.jpg"
+                          class="img-fluid h-100 rounded-start"
+                          alt="imageOne"
+                        />
+                      </div>
+                      <div class="col-7 align-self-center">
+                        <div class="card-body">
+                          <h5 class="card-title">Peaceful Piano</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-4">
+                  <div class="card mb-3 border-0" style="max-width: 540px">
+                    <div class="row g-0">
+                      <div class="col-5">
+                        <img
+                          src="assets/imgs/main/favourite.jpg"
+                          class="img-fluid h-100 rounded-start"
+                          alt="imageOne"
+                        />
+                      </div>
+                      <div class="col-7 align-self-center">
+                        <a
+                          id="linkToPlaylistPage"
+                          href="playlist.html"
+                          class="text-decoration-none text-white"
+                        >
+                          <div class="card-body">
+                            <h5 class="card-title">I tuoi brani preferiti</h5>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-4">
+                  <div class="card mb-3 border-0" style="max-width: 540px">
+                    <div class="row g-0">
+                      <div class="col-5">
+                        <img
+                          src="assets/imgs/main/image-6.jpg"
+                          class="img-fluid h-100 rounded-start"
+                          alt="imageOne"
+                        />
+                      </div>
+                      <div class="col-7 align-self-center">
+                        <div class="card-body">
+                          <h5 class="card-title">Jazz Vibes</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-4">
+                  <div class="card mb-3 border-0" style="max-width: 540px">
+                    <div class="row g-0">
+                      <div class="col-5">
+                        <img
+                          src="assets/imgs/main/image-7.jpg"
+                          class="img-fluid h-100 rounded-start"
+                          alt="imageOne"
+                        />
+                      </div>
+                      <div class="col-7 align-self-center">
+                        <div class="card-body">
+                          <h5 class="card-title">Caffè del buongiorno</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--Section 2-->
+          <!--Section nuova delle card da sola senza base da bootsrap-->
+          <section>
+            <div class="container-fluid d-none d-md-block">
+              <div
+                class="d-flex justify-content-between align-items-baseline text-white mb-2"
+              >
+                <h2>Altro di ciò che ti piace</h2>
+                <p>VISUALIZZA TUTTO</p>
+              </div>
+              <div
+                class="d-flex flex-row justify-content-center"
+                style="width: 100%"
+              >
+                <div class="row text-white justify-content-around">
+                  <div
+                    style="height: fit-content; width: 24%"
+                    class="col-3 cardBck p-2"
+                  >
+                    <div
+                      class="card photoPlay1 bg-transparent border-0 text-center d-flex align-items-center"
+                    >
+                      <img
+                        src="assets/imgs/main/image-11.jpg"
+                        alt="playlist1"
+                        class="img-fluid mb-1"
+                      />
+                    </div>
+                    <p class="h5">Playlist WorkOut</p>
+                    <p>The perfect mix for your workout</p>
+                    <i class="bi bi-play-circle-fill float-end"></i>
+                  </div>
+
+                  <div
+                    style="height: fit-content; width: 24%"
+                    class="col-3 cardBck p-2"
+                  >
+                    <div
+                      class="card photoPlay1 bg-transparent border-0 text-center d-flex align-items-center"
+                    >
+                      <img
+                        src="assets/imgs/main/image-12.jpg"
+                        alt="playlist1"
+                        class="img-fluid mb-1"
+                      />
+                    </div>
+                    <p class="h5">Playlist WorkOut</p>
+                    <p>The perfect mix for your workout</p>
+                    <i class="bi bi-play-circle-fill float-end"></i>
+                  </div>
+
+                  <div
+                    style="height: fit-content; width: 24%"
+                    class="col-3 cardBck p-2"
+                  >
+                    <div
+                      class="card photoPlay1 bg-transparent border-0 text-center d-flex align-items-center"
+                    >
+                      <img
+                        src="assets/imgs/main/image-13.jpg"
+                        alt="playlist1"
+                        class="img-fluid mb-1"
+                      />
+                    </div>
+                    <p class="h5">Playlist WorkOut</p>
+                    <p>The perfect mix for your workout</p>
+                    <i class="bi bi-play-circle-fill float-end"></i>
+                  </div>
+
+                  <div
+                    style="height: fit-content; width: 24%"
+                    class="col-3 cardBck p-2"
+                  >
+                    <div
+                      class="card photoPlay1 bg-transparent border-0 text-center d-flex align-items-center"
+                    >
+                      <img
+                        src="assets/imgs/main/image-14.jpg"
+                        alt="playlist1"
+                        class="img-fluid mb-1"
+                      />
+                    </div>
+                    <p class="h5">Playlist WorkOut</p>
+                    <p>The perfect mix for your workout</p>
+                    <i class="bi bi-play-circle-fill float-end"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--Section spotify Wrapped-->
+          <section class="d-md-block d-none">
+            <div class="card text-bg-dark p-1 my-5">
+              <img
+                src="assets/imgs/main/wrapped.jpg"
+                class="card-img"
+                alt="spotifyWrapped"
+                height="350px"
+              />
+              <div
+                class="card-img-overlay text-black d-flex flex-column justify-content-end"
+              >
+                <p class="card-text">Public Playlist</p>
+                <h1 class="card-title display-1 fw-bold">
+                  Scopri il tuo Wrapped 2024
+                </h1>
+                <p class="card-text h5 fw-light d-flex align-items-center">
+                  <img
+                    src="assets/imgs/logo.svg"
+                    alt="logo"
+                    width="100px"
+                    class="mx-2"
+                  />
+                  Made for <span class="fw-bold">&nbsp; User</span> &nbsp;• 100
+                  canzoni, 5hr 22min
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!--extra artisti-->
+          <section>
+            <div class="container-fluid d-none d-md-block">
+              <div
+                class="d-flex justify-content-between align-items-baseline text-white mb-2"
+              >
+                <h2>Artisti che ti piacciono</h2>
+                <p>VISUALIZZA TUTTO</p>
+              </div>
+              <div
+                class="d-flex flex-row justify-content-center text-center"
+                style="width: 100%"
+              >
+                <div class="artists row text-white justify-content-around">
+                  <div
+                    style="height: fit-content; width: 25%"
+                    class="col-3 cardBck p-0 bg-transparent"
+                  >
+                    <div
+                      class="indexArtist card photoPlay1 bg-transparent border-0 text-center d-flex align-items-center p-2"
+                    >
+                      <img
+                        src="assets/imgs/artists/eminem.jpg"
+                        alt="playlist1"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <p class="h6">
+                      EMINEM <i class="bi bi-patch-check-fill iconVerify"></i>
+                    </p>
+                  </div>
+
+                  <div
+                    style="height: fit-content; width: 25%"
+                    class="col-3 cardBck p-0 bg-transparent"
+                  >
+                    <div
+                      class="indexArtist card photoPlay1 bg-transparent border-0 text-center d-flex align-items-center p-2"
+                    >
+                      <img
+                        src="assets/imgs/artists/theWeeknd.jpg"
+                        alt="playlist1"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <p class="h6">
+                      TheWeeknd
+                      <i class="bi bi-patch-check-fill iconVerify"></i>
+                    </p>
+                  </div>
+
+                  <div
+                    style="height: fit-content; width: 25%"
+                    class="col-3 cardBck p-0 bg-transparent"
+                  >
+                    <div
+                      class="indexArtist card photoPlay1 bg-transparent border-0 text-center d-flex align-items-center p-2"
+                    >
+                      <img
+                        src="assets/imgs/artists/salmo.jpg"
+                        alt="playlist1"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <p class="h6">
+                      SALMO <i class="bi bi-patch-check-fill iconVerify"></i>
+                    </p>
+                  </div>
+
+                  <div
+                    style="height: fit-content; width: 25%"
+                    class="col-3 cardBck p-0 bg-transparent"
+                  >
+                    <div
+                      class="indexArtist card photoPlay1 bg-transparent border-0 text-center d-flex align-items-center p-2"
+                    >
+                      <img
+                        src="assets/imgs/artists/lanaDelRey.jpg"
+                        alt="playlist1"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <p class="h6">
+                        Lana Del Rey
+                        <i class="bi bi-patch-check-fill iconVerify"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!--Section Mobile-->
+          <section>
+            <div class="m-2 d-flex justify-content-center align-items-center">
+              <div class="playlistMobile">
+                <div class="col-sm-12 d-md-none">
+                  <div class="card mb-3 border-0" style="max-width: 540px">
+                    <div class="row g-0">
+                      <div class="col-5">
+                        <img
+                          src="assets/imgs/search/image-1.jpeg"
+                          class="img-fluid h-100 w-100 rounded-start"
+                          alt="imageOne"
+                        />
+                      </div>
+                      <div class="col-7 align-self-center">
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            Discover your Weekly Mix <br />
+                            (dec &nbsp; 2024)
+                          </h5>
+                          <br />
+                          <i class="bi bi-play-circle-fill float-end"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-12 d-md-none">
+                  <div class="card mb-3 border-0" style="max-width: 540px">
+                    <div class="row g-0">
+                      <div class="col-5">
+                        <img
+                          src="assets/imgs/search/image-2.jpg"
+                          class="img-fluid h-100 w-100 rounded-start"
+                          alt="imageOne"
+                        />
+                      </div>
+                      <div class="col-7 align-self-center">
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            DJ section <br />
+                            (nov- dec &nbsp; 2024)
+                          </h5>
+                          <br />
+                          <i class="bi bi-play-circle-fill float-end"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-12 d-md-none">
+                  <div class="card mb-3 border-0" style="max-width: 540px">
+                    <div class="row g-0">
+                      <div class="col-5">
+                        <img
+                          src="assets/imgs/search/image-3.jpg"
+                          class="img-fluid h-100 w-100 rounded-start"
+                          alt="imageOne"
+                        />
+                      </div>
+                      <div class="col-7 align-self-center">
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            Country Vibes <br />
+                            (nov - dec &nbsp; 2024)
+                          </h5>
+                          <br />
+                          <i class="bi bi-play-circle-fill float-end"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-12 d-md-none">
+                  <div class="card mb-3 border-0" style="max-width: 540px">
+                    <div class="row g-0">
+                      <div class="col-5">
+                        <img
+                          src="assets/imgs/search/image-4.jpg"
+                          class="img-fluid h-100 w-100 rounded-start"
+                          alt="imageOne"
+                        />
+                      </div>
+                      <div class="col-7 align-self-center">
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            POP MIX ! <br />
+                            (nov - dec &nbsp; 2024)
+                          </h5>
+                          <br />
+                          <i class="bi bi-play-circle-fill float-end"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-12 d-md-none">
+                  <div class="card mb-3 border-0" style="max-width: 540px">
+                    <div class="row g-0">
+                      <div class="col-5">
+                        <img
+                          src="assets/imgs/search/image-5.jpg"
+                          class="img-fluid h-100 w-100 rounded-start"
+                          alt="imageOne"
+                        />
+                      </div>
+                      <div class="col-7 align-self-center">
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            Latino Mix <br />
+                            (dec &nbsp; 2024)
+                          </h5>
+                          <br />
+                          <i class="bi bi-play-circle-fill float-end"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-12 d-md-none">
+                  <div class="card mb-3 border-0" style="max-width: 540px">
+                    <div class="row g-0">
+                      <div class="col-5">
+                        <img
+                          src="assets/imgs/search/image-6.jpg"
+                          class="img-fluid h-100 w-100 rounded-start"
+                          alt="imageOne"
+                        />
+                      </div>
+                      <div class="col-7 align-self-center">
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            R & B <br />
+                            (nov - dec &nbsp; 2024)
+                          </h5>
+                          <br />
+                          <i class="bi bi-play-circle-fill float-end"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="navbarMobile">
+            <!-- PLAYER MOBILE -->
+            <div class="d-block d-lg-none container bg-dark p-3 rounded-3 my-3">
+              <div class="d-flex w-100 justify-content-between">
+                <p class="text-white mb-0" id="songTitlePlayerMobile">
+                  <i class="bi bi-disc text-white"></i>
+                  Titolo canzone
+                </p>
+                <div>
+                  <i class="bi bi-music-player text-white"></i>
+                  <i
+                    id="btnToFavouriteSongsMobile"
+                    class="bi bi-heart text-white btnToFavouriteSongs"
+                  ></i>
+                  <i
+                    id="btnRemoveFavouriteSongsMobile"
+                    class="bi bi-heart-fill text-success btnRemoveFavouriteSongs"
+                    style="display: none"
+                  ></i>
+                  <p
+                    class="btn bg-transparent border-0 p-0 m-0"
+                    id="btnPlayerMobile"
+                  >
+                    <i
+                      id="playIconPlayerMobile"
+                      class="bi bi-play-fill text-white"
+                    ></i>
+                    <i
+                      id="pauseIconPlayerMobile"
+                      class="bi bi-pause-fill text-white"
+                      style="display: none"
+                    ></i>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- NAVBAR MOBILE -->
+            <div class="d-block d-lg-none container-fluid p-0">
+              <div
+                class="d-flex justify-content-between bg-black opacity-75 p-2"
+              >
+                <div class="d-flex flex-column">
+                  <i
+                    class="bi bi-house-door-fill text-white text-center opacity-100"
+                  ></i>
+                  <p class="text-white mb-0">Home</p>
+                </div>
+                <div class="d-flex flex-column">
+                  <i
+                    class="bi bi-search text-white text-center opacity-100"
+                  ></i>
+                  <p class="text-white mb-0">Cerca</p>
+                </div>
+                <div class="d-flex flex-column">
+                  <i
+                    class="bi bi-journals text-white text-center opacity-100"
+                  ></i>
+                  <p class="text-white mb-0">La tua librearia</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!--aside-->
+      <aside class="col-lg-2 d-none d-lg-block">
+        <div id="navAside" class="d-flex justify-content-between">
+          <div>
+            <p class="text-white m-2">Attività amici</p>
+          </div>
+          <div class="m-2">
+            <p class="text-secondary">
+              <span><i class="bi bi-person-add mx-1"></i></span
+              ><span><i class="bi bi-x-lg mx-1"></i></span>
+            </p>
+          </div>
+        </div>
+
+        <div class="d-flex text-secondary" id="amici">
+          <div>
+            <img
+              class="rounded-circle m-2"
+              src="assets/imgs/people/samu.jpeg"
+              height="24"
+              width="24"
+            />
+          </div>
+          <div class="d-flex justify-content-between w-100">
+            <div class="m-2">
+              <h5>Samuele Converso</h5>
+              <p><small>Lana Del Ray - Born to Die</small></p>
+              <p>
+                <span><i class="bi bi-music-note-beamed me-1"></i></span> BORN
+                TO DIE
+              </p>
+            </div>
+            <div class="m-2">
+              <small><p>4 ore</p></small>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex text-secondary" id="amici">
+          <div>
+            <img
+              class="rounded-circle m-2"
+              src="assets/imgs/people/vale.jpg"
+              height="24"
+              width="24"
+            />
+          </div>
+          <div class="d-flex justify-content-between w-100">
+            <div class="m-2">
+              <h5>Valentina Rizzo</h5>
+              <p><small>The Weeknd - Starboy</small></p>
+              <p>
+                <span><i class="bi bi-music-note-beamed me-1"></i></span>SIX
+                FEET UNDER
+              </p>
+            </div>
+            <div class="m-2">
+              <small><p>4 ore</p></small>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex text-secondary" id="amici">
+          <div>
+            <img
+              class="rounded-circle m-2"
+              src="assets/imgs/people/ale.jpeg"
+              height="24"
+              width="24"
+            />
+          </div>
+          <div class="d-flex justify-content-between w-100">
+            <div class="m-2">
+              <h5>Alessandro Incalza</h5>
+              <p><small>Geolier - DIO LO SA</small></p>
+              <p>
+                <span><i class="bi bi-music-note-beamed me-1"></i></span
+                ><small>NUN SACC' PERDERE</small>
+              </p>
+            </div>
+            <div class="m-2">
+              <small><p>8 ore</p></small>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex text-secondary" id="amici">
+          <div>
+            <img
+              class="rounded-circle m-2"
+              src="assets/imgs/people/ombretta.jpeg"
+              height="24"
+              width="24"
+            />
+          </div>
+          <div class="d-flex justify-content-between w-100">
+            <div class="m-2">
+              <h5>Ombretta</h5>
+              <p><small>Lady Gaga - The Fame</small></p>
+              <p>
+                <span><i class="bi bi-music-note-beamed me-1"></i></span> THE
+                FAME
+              </p>
+            </div>
+            <div class="m-2">
+              <small><p>4 ore</p></small>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex text-secondary" id="amici">
+          <div>
+            <img
+              class="rounded-circle m-2"
+              src="assets/imgs/people/mariam.jpeg"
+              height="24"
+              width="24"
+            />
+          </div>
+          <div class="d-flex justify-content-between w-100">
+            <div class="m-2">
+              <h5>Mariam</h5>
+              <p><small>Kendji Girac - Kendji</small></p>
+              <p>
+                <span><i class="bi bi-music-note-beamed me-1"></i></span
+                >ANDALOUSE
+              </p>
+            </div>
+            <div class="m-2">
+              <small><p>4 ore</p></small>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <!--Footer-->
+    <footer class="d-flex d-none d-lg-block">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="d-flex">
+              <div class="startstop">
+                <img id="imgAlbumPlayer" src="" alt="foto album" />
+              </div>
+              <div class="startstoptesto row">
+                <p id="songName"></p>
+                <p id="artistNamePlayer"></p>
+              </div>
+              <div
+                class="d-flex justify-content-center align-items-center mx-3"
+                style="height: 100px"
+              >
+                <i
+                  id="btnToFavouriteSongsDesktop"
+                  class="bi bi-heart mx-2 btnToFavouriteSongs"
+                ></i>
+                <i
+                  id="btnRemoveFavouriteSongsDesktop"
+                  class="bi bi-heart-fill text-success mx-2 btnRemoveFavouriteSongs"
+                  style="display: none"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7 d-flex">
+            <div
+              class="barraMusica w-100 flex-column justify-content-center align-content-center"
+            >
+              <div
+                class="mb-2 text-center d-flex align-items-center justify-content-center"
+              >
+                <i class="bi bi-shuffle mx-2"></i>
+                <i
+                  class="bi bi-skip-start-fill mx-2"
+                  id="btnBackwardDesktop"
+                ></i>
+                <button type="button" id="btnPlay" class="bntPlay">
+                  <i
+                    id="playIconPlayerDesktop"
+                    class="bi bi-play-circle-fill bg mx-2"
+                  ></i>
+                  <i
+                    id="pauseIconPlayerDesktop"
+                    class="bi bi-pause-circle-fill mx-2"
+                    style="display: none"
+                  ></i>
+                </button>
+                <i class="bi bi-skip-end-fill mx-2" id="btnForwardDesktop"></i>
+                <i class="bi bi-repeat mx-2"></i>
+              </div>
+              <div class="p-0">
+                <div class="d-flex justify-content-center mb-2">
+                  <span>0:<span id="currentTime" class="me-2">00</span></span>
+                  <input
+                    id="seekBar"
+                    type="range"
+                    class="form-range w-100 mx-2"
+                    value="0"
+                    step="1"
+                    min="0"
+                    style="max-width: 300px"
+                  />
+                  <span class="ms-2">0:<span id="duration">00</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 d-flex">
+            <div class="d-flex align-items-center">
+              <i class="bi bi-mic mx-2"></i>
+              <i class="bi bi-list mx-2"></i>
+              <i class="bi bi-speaker mx-2"></i>
+              <i class="bi bi-volume-down mx-2"></i>
+              <i class="bi bi-arrows-angle-expand"> </i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

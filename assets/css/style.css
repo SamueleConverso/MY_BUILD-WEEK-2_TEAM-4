@@ -1,0 +1,615 @@
+/*---regole CSS reset---*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Circular", serif;
+}
+
+html,
+body {
+  min-width: 576px;
+  background-color: black;
+}
+
+/*---HEADER delle 4 pagine---*/
+
+.navbar {
+  background-color: black !important;
+}
+
+.menuList,
+.listMusic {
+  list-style-type: none;
+}
+
+.menuList i {
+  margin-right: 1rem;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.menuList li {
+  margin: 1rem 0;
+}
+
+/*---OVERFLOW delle pagine---*/
+
+.overflow-auto {
+  height: 100vh; 
+  overflow-y: auto;
+  padding: 0 10px;
+}
+
+.overflow-auto::-webkit-scrollbar {
+  width: 10px;
+}
+
+.overflow-auto::-webkit-scrollbar-thumb {
+  background-color: #242424;
+  border-radius: 10px;
+}
+
+/*---Bottoni e Icone---*/
+
+.bi-plus-lg {
+  color: black;
+}
+
+.bi-heart-fill {
+  background: linear-gradient(#3a19a9, #7e9499);
+}
+
+.bi-bookmark-fill {
+  background-color: #1d4637;
+  color: #4b9743;
+}
+
+.searchButton,
+.accordion-body {
+  background-color: #242424;
+  border-radius: 10px;
+  border: none;
+}
+
+.accordion-body {
+  background-color: black;
+}
+
+#btnSearch {
+  border-radius: 10px;
+}
+
+#btnSearch:hover {
+  background-color: white !important;
+  color: black;
+}
+
+.accordion-button,
+.accordion-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.hedIcon {
+  font-size: 20px;
+}
+
+.iconsBeforeAfter {
+  font-size: 25px;
+}
+
+.btnPlay,
+.btnSalva {
+  background-color: #20d760;
+  border-radius: 20px;
+  padding: 0.5rem 2rem;
+}
+
+.btnSalva {
+  background-color: transparent;
+}
+
+/*----MAIN delle 4 pagine----*/
+
+.page1 main,
+.page3 main {
+  background: linear-gradient(180deg, #212121 10%, #101010 90%);
+}
+
+.page4 main {
+  background: linear-gradient(180deg, #3a19a9 10%, #101010 45%);
+}
+
+.page2 main {
+  background: linear-gradient(180deg, #ceb24a 10%, #101010 45%);
+}
+
+
+/*---shadow delle immagini---*/
+
+.imgShadow {
+  box-shadow: 0 0 20px #171717, 0 0 10px white;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+.imgShadow:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 18px #171717, 0 0 10px white;
+}
+
+/*------Writings Main------*/
+
+.navMain{
+  border-radius: 30px;
+  border: 1px solid white;
+  color: white;
+}
+
+/*---Backgrounds---*/
+.albumBg {
+  background: linear-gradient(to bottom right, #697565 10%, #3c3d37 60%);
+}
+
+
+
+/*---MAIN section1 - BUONASERA---*/
+
+.icBuonanotte {
+  font-size: 1.5em;
+}
+
+.buonaseraCards img {
+  min-width: none;
+}
+
+.buonaseraCards img {
+  height: fit-content;
+  width: fit-content;
+}
+
+.buonaseraCards .card,
+.musicCards .card {
+  background-color: #2e2e2e;
+  color: white;
+  cursor: pointer;
+}
+
+.buonaseraCards h5 {
+  font-size: 12px;
+}
+
+/*---CARDS MUSIC----*/
+
+.photoPlay1 img {
+  border-radius: 10px;
+}
+
+.cardBck {
+  background-color: #2e2e2e;
+  border-radius: 10px;
+}
+
+.cardBck i {
+  color: #20d760;
+  font-size: 40px;
+}
+
+/*---MAIN section2---*/
+
+.playlistMobile .card {
+  background: linear-gradient(to bottom right, #2e2e2e, #242424);
+  color: white;
+}
+
+.playlistMobile i {
+  font-size: 50px;
+  color: #20d760;
+}
+
+.playlistMobile i:hover {
+  cursor: pointer;
+  text-shadow: 2px 2px 5px white;
+}
+
+/*---ASIDE---*/
+
+#navAside p {
+  font-size: 0.8em;
+}
+
+#amici h5,
+#amici p {
+  margin: 0;
+}
+
+#amici {
+  font-size: 0.5em;
+}
+
+#amici h5 {
+  font-size: 1.2em;
+}
+
+/*---MAIN section3----*/
+
+.containerImg {
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: #2e2e2e;
+  height: 20vh;
+  width: 120px;
+  color: white;
+}
+
+.containerImg img {
+  border-radius: 10px;
+}
+
+.playlist i:hover {
+  cursor: pointer;
+  text-shadow: 2px 2px 5px white;
+}
+
+.indexArtist img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+}
+
+.artists .iconVerify {
+  color: #135eb0 !important;
+  font-size: 20px;
+}
+
+/*------ FOOTER ------*/
+footer {
+  position: sticky;
+  bottom: 0;
+  background-color: #212121;
+  color: white;
+}
+.startstop {
+  align-content: center;
+}
+.startstop img {
+  margin-right: 10px;
+  width: 80px;
+  height: 80px;
+}
+.startstoptesto {
+  width: 150px;
+  align-content: center;
+}
+.startstoptesto p {
+  margin-bottom: 0%;
+}
+.biSuitHeart svg {
+  align-items: center;
+}
+
+.barraMusica {
+  width: 500px;
+  align-items: center;
+  justify-content: center;
+}
+#seekBar {
+  width: 300px;
+  align-self: stretch;
+}
+.bi-volume-down {
+  font-size: 25px;
+}
+
+.bntPlay {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 30px;
+}
+
+#btnPlay i {
+  font-size: 30px;
+  color: white;
+}
+
+/*---- END OF THE FIRST PAGE
+----START OF THE SECOND PAGE (ALBUM PAGE HTML)-----*/
+
+.page2 .hederMain {
+  background: #ceb24a;
+}
+
+.page2 #albumSection {
+  background: transparent;
+}
+
+.withFlwBtn {
+  width: 150px;
+}
+
+/*-----MOBILE MAIN OF THE SECOND PAGE----*/
+
+.bi-arrow-left {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.photoSinger img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+/* .imagesArtists{
+  object-fit: cover;
+  object-position: bottom;
+} */
+
+@media screen and (max-width: 991px) {
+  .listMusic ol li::before {
+    display: none;
+  }
+}
+
+/*---SECTION ALBUM----*/
+#albumSection p,
+#albumSection h1 {
+  color: white;
+}
+
+.page1 #albumSection {
+  background: linear-gradient(180deg, #2e2e2e, #171717);
+}
+
+.immagineProfiloMusica {
+  border-radius: 50%;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.userSelect {
+  border: 1px solid transparent;
+}
+
+.userSelect:hover {
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.playlist img {
+  border-radius: 10px;
+}
+
+.playlist .card {
+  background-color: #2e2e2e;
+  color: white;
+}
+
+/*---- SECTION & PLAYER - MOBILE----*/
+
+.navbarMobile {
+  position: sticky;
+  bottom: 0;
+}
+
+.immaginealbum {
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 0 30px #101010, 0 0 5px white;
+}
+
+.immaginealbumMobile, .imgalbumMob {
+  box-shadow: 0 0 30px #101010, 0 0 5px white;
+} */
+
+/*---FINE PAGINA 3---
+--- INIZIO PAGINA 3 - PAGINA ARTISTA---*/
+
+.bi-patch-check-fill {
+  font-size: 30px;
+}
+
+.bi-patch-check-fill {
+  font-size: 15px;
+}
+.ascoltatoriMensili p {
+  font-size: 5px;
+}
+
+.titolation {
+  opacity: 50%;
+}
+
+.sizeText h2 {
+  font-size: 24px;
+}
+
+.salmo {
+  width: 100%;
+  height: 100%;
+}
+.followingBtn {
+  background-color: transparent;
+  border-radius: 1px solid white;
+}
+.heartLikedSong {
+  color: white;
+  width: 30px;
+  height: 30px;
+}
+
+.playerArtist {
+  font-size: 60px;
+  color: #20d760;
+  cursor: pointer;
+}
+
+.likedSong {
+  flex-shrink: 0;
+  height: 70px;
+  justify-items: end;
+}
+
+/*---FUNZIONE COUNTER DELLE ORDERED LISTS---*/
+
+.listMusic ol,
+.favPlay ol,
+.popularSongs ol {
+  list-style-position: inside;
+  counter-reset: list-counter;
+  color: white;
+}
+
+.listMusic ol li,
+.favPlay ol li,
+.popularSongs ol li {
+  counter-increment: list-counter;
+  margin: 1rem 0;
+}
+
+.listMusic ol li::before,
+.favPlay ol li::before,
+.popularSongs ol li::before {
+  content: counter(list-counter) ".";
+  font-weight: normal;
+}
+
+.likedSong img {
+  border-radius: 50%;
+  position: relative;
+}
+.testolike,
+p {
+  padding: 3px;
+  margin-bottom: 0%;
+  font-size: 9px;
+}
+.arianagrande {
+  display: flex;
+}
+
+.mobileBar .bi-three-dots-vertical {
+  font-size: 30px;
+}
+.mobileBar .bi-shuffle {
+  font-size: 22px;
+  color: #20d760;
+}
+
+.heartLikedSong {
+  background: #20d760;
+  border-radius: 50%;
+  font-size: 10px;
+  padding: 10px;
+  position: absolute;
+  bottom: -0%;
+  right: 0px;
+}
+
+.imglike {
+  width: 60px;
+  height: 60px;
+}
+/*-----Sizing the text in the third page----*/
+
+/* .popularSongs ol {
+  list-style-position: inside;
+  counter-reset: list-counter;
+  color: white;
+}
+
+.popularSongs ol li {
+  counter-increment: list-counter;
+  margin: 1rem 0;
+}
+
+.popularSongs ol li::before {
+  content: counter(list-counter) ".";
+  font-weight: normal;
+} */
+
+.popularSongs ol li img {
+  width: 30px;
+}
+
+.popularSongs ol li p {
+  font-size: 10px;
+  margin: 0;
+}
+
+/*---FINE PAGINA 3
+INIZIO PAGINA EXTRA - PLAYLIST-----*/
+
+.utente {
+  font-size: 30px;
+}
+
+.sectionFav {
+  background-color: #3a19a9;
+}
+
+.inputSearch {
+  outline: none;
+  background-color: transparent;
+  color: white;
+}
+
+.searchRow {
+  background-color: #1d143f;
+  border-radius: 30px;
+  padding-left: 1rem;
+  margin: 0 auto;
+  width: 500px;
+}
+
+.searchTransition {
+  
+
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 100;
+    transform: translateX(0);
+  }
+}
+
+.containerTransition:hover .searchTransition {
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+.searchBtn {
+  outline: none;
+  border-radius: 30px;
+  background-color: #3a19a9;
+}
+
+.iconHeartFav {
+  background: none;
+  color: #20d760;
+}
+
+.favPlay ol li {
+  border-bottom: 1px solid #1d143f;
+}
+
+#btnBackwardDesktop,
+#btnForwardDesktop {
+  cursor: pointer;
+}
+
+.btnToFavouriteSongs,
+.btnRemoveFavouriteSongs {
+  cursor: pointer;
+  background: unset;
+}
