@@ -374,7 +374,7 @@ function progressTrack() {
     duration.innerText = Math.round(track.duration);
   });
   track.addEventListener("timeupdate", () => {
-    if (!mouseDownOnSlider) {
+    if (!mouseDownOnSlider && track) {
       progressBar.value = (track.currentTime / track.duration) * 100;
       if (Math.floor(track.currentTime) < 9) {
         currentTime.innerText = "0" + Math.floor(track.currentTime + 1);
